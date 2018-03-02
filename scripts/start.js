@@ -45,7 +45,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 
 if (process.env.HOST) {
   console.log(
-    chalk.cyan(
+    chalk.white(
       `Attempting to bind to HOST environment variable: ${chalk.yellow(
         chalk.bold(process.env.HOST)
       )}`
@@ -88,7 +88,7 @@ choosePort(HOST, DEFAULT_PORT)
       if (isInteractive) {
         clearConsole();
       }
-      console.log(chalk.cyan('Starting the development server...\n'));
+      console.log(chalk.white('Starting the development server...\n'));
       openBrowser(urls.localUrlForBrowser);
     });
 
